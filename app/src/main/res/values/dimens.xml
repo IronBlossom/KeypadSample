@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="hwKeyTextSize">12dp</dimen>
+    <dimen name="hwRefTvSize">9dp</dimen>
+
+    <dimen name="indicatorKeyTextSize">20dp</dimen>
+
+
+    <dimen name="numericKeyHoneywellTextSize">20dp</dimen>
+    <dimen name="controlKeyHoneywellTextSize">20dp</dimen>
+
+
+    <dimen name="generic_padding">8dp</dimen>
+    <dimen name="radiusCorner">5dp</dimen>
+    <dimen name="lcdBorderWidth">2dp</dimen>
+    <dimen name="numericKey2HorizontalMargin">3dp</dimen>
+    <dimen name="controlKey2Margin">2dp</dimen>
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="asteriskSign">*</string>
+    <string name="numberSign">#</string>
+
+    <string name="app_name">KeypadSample</string>
+    <item name="honeywell_zero" type="id"/>
+    <item name="honeywell_one" type="id"/>
+    <item name="honeywell_two" type="id"/>
+    <item name="honeywell_three" type="id"/>
+    <item name="honeywell_four" type="id"/>
+    <item name="honeywell_five" type="id"/>
+    <item name="honeywell_six" type="id"/>
+    <item name="honeywell_seven" type="id"/>
+    <item name="honeywell_eight" type="id"/>
+    <item name="honeywell_nine" type="id"/>
+    <item name="honeywell_asteriskSign" type="id"/>
+    <item name="honeywell_numberSign" type="id"/>
+    <item name="honeywell_A" type="id"/>
+    <item name="honeywell_B" type="id"/>
+    <item name="honeywell_C" type="id"/>
+    <item name="honeywell_D" type="id"/>
+</resources>

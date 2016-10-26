@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <color name="colorBtnText">#805021</color>
+    <color name="colorLcdBorder">#815123</color>
+    <color name="colorKeypadBorder">#d3d3d3</color>
+    <color name="colorKeypadBackground">#f0f0f0</color>
+    <color name="colorBtnBackgroundNormal">#ffffff</color>
+    <color name="colorBtnBackgroundPressed">#815123</color>
+
+    <style name="hwKeyContainer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="hwRefTextView" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textScaleX">1.2</item>
+        <item name="android:textSize">@dimen/hwRefTvSize</item>
+        <item name="android:textColor">@android:color/tertiary_text_dark</item>
+    </style>
+
+    <style name="hwKeyBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">onKeyPressed</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginRight">@dimen/numericKey2HorizontalMargin</item>
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="hwKeyNumber" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">@dimen/numericKeyHoneywellTextSize</item>
+        <item name="android:textColor">@color/tv_state_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="hwKeyText" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@color/tv_state_color</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/hwKeyTextSize</item>
+    </style>
+
+    <style name="hwKeyArrow" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#7c7b7b</item>
+        <item name="android:textSize">@dimen/hwRefTvSize</item>
+        <item name="android:textScaleX">0.8</item>
+    </style>
+
+    <style name="controlKeyHoneywell" parent="@android:style/Widget.Button">
+        <item name="android:onClick">onControlKeyPressed</item>
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="android:layout_margin">@dimen/controlKey2Margin</item>
+        <item name="android:textSize">@dimen/controlKeyHoneywellTextSize</item>
+        <item name="android:textColor">@color/tv_state_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="indicatorKey" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/indicatorKeyTextSize</item>
+        <item name="android:gravity">end|right</item>
+    </style>
+</resources>

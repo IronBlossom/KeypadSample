@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@drawable/lay_background_keypad"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/generic_padding"
+    android:paddingLeft="@dimen/generic_padding"
+    android:paddingTop="@dimen/generic_padding"
+    android:weightSum="10.150">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/lay_background_keypad2_control"
+        android:orientation="vertical"
+        android:padding="@dimen/lcdBorderWidth"
+        android:weightSum="4">
+
+        <Button
+            android:id="@id/honeywell_A"
+            style="@style/controlKeyHoneywell"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="A" />
+
+        <Button
+            android:id="@id/honeywell_B"
+            style="@style/controlKeyHoneywell"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="B" />
+
+        <Button
+            android:id="@id/honeywell_C"
+            style="@style/controlKeyHoneywell"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="C" />
+
+        <Button
+            android:id="@id/honeywell_D"
+            style="@style/controlKeyHoneywell"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="D" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/lcdBorderWidth"
+        android:paddingLeft="@dimen/lcdBorderWidth"
+        android:paddingTop="@dimen/lcdBorderWidth"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/lcdBorderWidth"
+            android:paddingLeft="@dimen/lcdBorderWidth"
+            android:paddingTop="@dimen/lcdBorderWidth"
+            android:weightSum="3">
+
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text="RECORD" />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_one"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/one" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="OFF " />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text="VOLUME" />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_two"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/two" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="AWAY " />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text="PLAY" />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_three"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv"
+                    android:layout_marginRight="0dp">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/three" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="STAY " />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/lcdBorderWidth"
+            android:paddingLeft="@dimen/lcdBorderWidth"
+            android:paddingTop="@dimen/lcdBorderWidth"
+            android:weightSum="3">
+
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text=" " />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_four"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/four" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="MAX " />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text=" " />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_five"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/five" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="TEST " />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text=" " />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_six"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv"
+                    android:layout_marginRight="0dp">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/six" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="BYPASS " />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/lcdBorderWidth"
+            android:paddingLeft="@dimen/lcdBorderWidth"
+            android:paddingTop="@dimen/lcdBorderWidth"
+            android:weightSum="3">
+
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text=" " />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_seven"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/seven" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="INSTANT " />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text=" " />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_eight"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/eight" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="CODE " />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text=" " />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_nine"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv"
+                    android:layout_marginRight="0dp">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/nine" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="CHIME " />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/lcdBorderWidth"
+            android:paddingLeft="@dimen/lcdBorderWidth"
+            android:paddingTop="@dimen/lcdBorderWidth"
+            android:weightSum="3">
+
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text="STATUS" />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_asteriskSign"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/asteriskSign" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="READY " />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text="VOICE" />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_zero"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/zero" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout style="@style/hwKeyContainer">
+
+                <TextView
+                    android:id="@+id/hwRefTv"
+                    style="@style/hwRefTextView"
+                    android:text="FUNCTION" />
+
+                <RelativeLayout
+                    android:id="@id/honeywell_numberSign"
+                    style="@style/hwKeyBackground"
+                    android:layout_above="@+id/hwRefTv"
+                    android:layout_marginRight="0dp">
+
+                    <TextView
+                        style="@style/hwKeyNumber"
+                        android:text="@string/numberSign" />
+
+                    <TextView
+                        style="@style/hwKeyText"
+                        android:text="" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".150"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <TextView
+            style="@style/hwKeyArrow"
+            android:text="\u25b2" />
+
+        <TextView
+            style="@style/hwKeyArrow"
+            android:text="\u25bc" />
+    </LinearLayout>
+</LinearLayout>
